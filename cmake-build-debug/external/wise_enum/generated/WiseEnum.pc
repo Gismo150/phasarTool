@@ -1,0 +1,6 @@
+prefix=/usr/local
+includedir=${prefix}/include
+
+Name: WiseEnum
+Description: wise_enum by quicknir
+Version: 3.0.0

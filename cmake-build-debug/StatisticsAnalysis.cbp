@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="StatisticsAnalysis"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\llvm\;CMake Files\external\;CMake Files\external\json\;CMake Files\external\json\cmake\;CMake Files\external\wise_enum\;CMake Files\external\wise_enum\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="StatisticsAnalysis">
+				<Option output="/home/gismo/GitRepo/phasarTool/cmake-build-debug/StatisticsAnalysis" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/gismo/GitRepo/phasarTool/external/json/single_include/nlohmann"/>
+					<Add directory="/home/gismo/GitRepo/phasarTool/external/wise_enum"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 StatisticsAnalysis"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="StatisticsAnalysis/fast">
+				<Option output="/home/gismo/GitRepo/phasarTool/cmake-build-debug/StatisticsAnalysis" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_LOG_DYN_LINK"/>
+					<Add directory="/home/gismo/GitRepo/phasarTool/external/json/single_include/nlohmann"/>
+					<Add directory="/home/gismo/GitRepo/phasarTool/external/wise_enum"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 StatisticsAnalysis/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="intrinsics_gen">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 intrinsics_gen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/gismo/GitRepo/phasarTool/cmake-build-debug/external/json/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/StatisticsAnalysis.cpp">
+			<Option target="StatisticsAnalysis"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/../../../../usr/local/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/../../../../usr/local/lib/cmake/llvm/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/../../../../usr/local/lib/cmake/llvm/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/../../../../usr/local/lib/cmake/llvm/LLVMExports-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/../../../../usr/local/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\llvm\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/external/json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\json\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/external/json/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\external\json\cmake\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/external/wise_enum/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\external\wise_enum\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/external/wise_enum/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\external\wise_enum\cmake\"/>
+		</Unit>
+		<Unit filename="/home/gismo/GitRepo/phasarTool/external/wise_enum/cmake/WiseEnum.pc.in">
+			<Option virtualFolder="CMake Files\external\wise_enum\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
