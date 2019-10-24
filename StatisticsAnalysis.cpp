@@ -14,10 +14,16 @@ using namespace std;
 using namespace psr;
 using json = nlohmann::json;
 
+std::string getFileName (const std::string& str)
+{
+    std::size_t found = str.find_last_of("/");
+    return str.substr(found+1);
+}
+
 void appendModuleResult(GeneralStatisticsPass *GSP, json &outerJsonArray, llvm::Module &module) {
     json o;
     o["Source Filename"] = module.getSourceFileName();
-    o["Module Name"] = module.getName().str();
+    o["Module Name"] = getFileName(module.getName().str());
     o["Allocated Types"] = GSP->getAllocatedTypes().size();
     o["Allocated Sites"] = GSP->getAllocationsites();
     o["Basic Blocks"] = GSP->getBasicBlocks();
@@ -29,7 +35,7 @@ void appendModuleResult(GeneralStatisticsPass *GSP, json &outerJsonArray, llvm::
     o["Memory Intrinsics"] = GSP->getMemoryIntrinsics();
     o["Store Instructions"] = GSP->getStoreInstructions();
 
-    std::cout << "PRINTING ANALYSIS SUMMARY FOR MODULE:" <<  module.getName().str() << "\n";
+    std::cout << "ANALYSIS SUMMARY FOR MODULE:" <<  module.getName().str() << "\n";
     std::cout << o.dump(0) << std::endl;
     outerJsonArray.push_back(o);
 }
