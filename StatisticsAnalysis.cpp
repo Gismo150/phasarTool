@@ -68,7 +68,7 @@ int main(int argc, const char **argv) {
 
     initializeLogger(false);
     auto &lg = lg::get();
-    if (argc < 3 || !bfs::exists(argv[1]) || bfs::is_directory(argv[1]) || !bfs::exists(argv[2])) { //TODO CHECK IF CONDITION IS CORRECT
+    if (argc < 3 || !bfs::exists(argv[1]) || bfs::is_directory(argv[1]) || !bfs::exists(argv[2])) {
         std::cerr << "usage: <prog><ir file><path to results.json file>\n";
         if(!bfs::exists(argv[1])) {
             std::cerr << argv[1] << " IS NOT AN EXISTING FILE\n";
@@ -87,8 +87,9 @@ int main(int argc, const char **argv) {
     json outerJsonArray;
     readResultsJson(outerJsonArray, path);
 
-    ProjectIRDB DB({argv[1]}, IRDBOptions::WPA);
-    DB.preprocessIR();
+    ProjectIRDB DB({argv[1]}, IRDBOptions::NONE);
+
+    //DB.preprocessIR(); <- this function is causing a lot of memory consumption on runtime.
     std::set<llvm::Module *> moduleSet =  DB.getAllModules();
 
     std::cout << "IR File contains " << moduleSet.size() << " Module(s)\n";
