@@ -19,7 +19,12 @@ std::string getFileName (const std::string& str)
     std::size_t found = str.find_last_of("/");
     return str.substr(found+1);
 }
-
+/**
+ * Collects the analysis results and stores them into the a Json object, that is then appended to the Results.json array.
+ * @param GSP Reference to the anlyser.
+ * @param outerJsonArray The Json array storing all the results.
+ * @param module Reference to the LLVM module.
+ */
 void appendModuleResult(GeneralStatisticsPass *GSP, json &outerJsonArray, llvm::Module &module) {
     json o;
     o["Source Filename"] = module.getSourceFileName();
@@ -43,20 +48,20 @@ void appendModuleResult(GeneralStatisticsPass *GSP, json &outerJsonArray, llvm::
 /**
  * Checks if results.json file exists. If not return empty array. Otherwise read in the existing json array.
  * @param outerJsonArray
- * @return
+ * @return A Json Array.
  */
 void readResultsJson(json &outerJsonArray, string path) {
-    if ( !boost::filesystem::exists( path ) ) //check if file
+    if ( !boost::filesystem::exists( path ) ) //check if file exists
     {
-        outerJsonArray = json::array(); // create empty array
+        outerJsonArray = json::array(); // if not, create empty json array
     } else {
-        std::ifstream i(path);
+        std::ifstream i(path); // else read existing file
         i >> outerJsonArray;
     }
 }
 
 /**
- * Writes the complete analysis result into the results.json array.
+ * Writes the complete analysis result into the results.json array to the provieded path.
  * @param outerJsonArray
  */
 void writeResultsJson(json &outerJsonArray, string path) {
@@ -79,6 +84,8 @@ int main(int argc, const char **argv) {
 
         return 1;
     }
+
+    //----------------INITIALIZATION---------------------//
     std::string path = argv[2];
     path += "/results.json";
     std::cout << "Writing results to: "<< path << "\n";
@@ -88,10 +95,12 @@ int main(int argc, const char **argv) {
     readResultsJson(outerJsonArray, path);
 
     ProjectIRDB DB({argv[1]}, IRDBOptions::NONE);
+    //----------------END INITIALIZATION---------------------//
 
-    //DB.preprocessIR(); <- this function is causing a lot of memory consumption on runtime.
+    //DB.preprocessIR(); <- this function is causing a lot of memory consumption on runtime, possibly memory leak?
     std::set<llvm::Module *> moduleSet =  DB.getAllModules();
 
+    //Run the analysis for each module found within the .ll file.
     std::cout << "IR File contains " << moduleSet.size() << " Module(s)\n";
     for(auto module: moduleSet){
         std::cout << "Starting to analyse module: " << module->getName().str() << "\n";

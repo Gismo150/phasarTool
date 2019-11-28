@@ -1,3 +1,0 @@
-/home/gismo/GitRepo/phasarTool/TestProgram/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/gismo/GitRepo/phasarTool/TestProgram/cmake-build-debug/CMakeFiles/TestProgram.dir
-/home/gismo/GitRepo/phasarTool/TestProgram/cmake-build-debug/CMakeFiles/edit_cache.dir
