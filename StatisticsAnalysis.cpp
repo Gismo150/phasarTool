@@ -38,6 +38,7 @@ void appendModuleResult(GeneralStatisticsPass *GSP, json &outerJsonArray, llvm::
     o["Global Pointer"] = GSP->getGlobalPointers();
     o["Instructions"] = GSP->getInstructions();
     o["Memory Intrinsics"] = GSP->getMemoryIntrinsics();
+    o["Load Instructions"] = GSP->getLoadInstructions();
     o["Store Instructions"] = GSP->getStoreInstructions();
 
     std::cout << "ANALYSIS SUMMARY FOR MODULE:" <<  module.getName().str() << "\n";
